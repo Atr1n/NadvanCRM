@@ -1,46 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Webpack</title>
-</head>
-<body>
-
-    <header class="header">
-        <div class="container">
-            <div class="overlay header__nav">
-                <nav class="header__item">
-                    <ul class="header__item-list">
-                        <li><a class="header-links" href="#life">Something</a></li>
-                        <li><a class="header-links" href="#frames">Something</a></li>
-                        <li><a class="header-links" href="#emotions">Something</a></li>
-                        <li><a class="header-links" href="#qids">Something</a></li>
-                        <li><a class="header-links" href="#potok">Something</a></li>
-                    </ul>
-                </nav>
-                <a class="header__item-btn des" href="tel:77777777">
-                    +7 777 777 77 77
-                </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <title>Webpack</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="overlay header__nav">
+                    <nav class="header__item">
+                        <ul class="header__item-links">
+                            <li>
+                                <a class="header-link" href="#life"
+                                    >Something</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header-link" href="#frames"
+                                    >Something</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header-link" href="#emotions"
+                                    >Something</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header-link" href="#qids"
+                                    >Something</a
+                                >
+                            </li>
+                            <li>
+                                <a class="header-link" href="#potok"
+                                    >Something</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__item-btn des" href="tel:77777777">
+                        +7 777 777 77 77
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="navBurger" role="navigation" id="navToggle"></div>
-    </header>
-        
-    <main class="main">
-        <div class="container">
-            <div class="main__content">
-                
+            <div class="navBurger" role="navigation" id="navToggle"></div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="main__content">
+                    <div class="main__item">
+                        <div class="main__item-desc">
+                            <h1>CRM Integration</h1>
+                            <p>
+                                Move your customer relationship to the next
+                                level by integrating your favorite CRM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main__item">
+                        <div class="main__item-img">
+                            <img
+                                src="assets/img/main.webp"
+                                width="500"
+                                height="420"
+                                alt="CRM"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <section class="main-more section">
+                    <div class="main-more__content">
+                        <div class="main-more__item">
+                            <div class="main-more__item-desc">
+                                <p>
+                                    The data is everything. Especially if it is
+                                    sensitive information concerning your
+                                    clients. Their contacts, purchase history,
+                                    service issues, marketing activities
+                                    engagement — how do you store and manage
+                                    this information? Do you keep it in mind,
+                                    write in a journal, create Excel tables, or
+                                    use customer relationship management (CRM)
+                                    software? We bet the last option is the most
+                                    suitable solution for the 21-century
+                                    business.
+                                </p>
+                            </div>
+                            <div class="main-more__item-desc">
+                                <p>
+                                    Whether you are a small company at the
+                                    beginning of its journey or a large-scale
+                                    enterprise with thousands of dedicated
+                                    users, CRM software is a necessity to get
+                                    valuable insight into your clients’
+                                    behavior. It is a robust and effective tool
+                                    on its own, but you can get even more by
+                                    integrating preferred CRM with your website.
+                                    We at Ester Digital know how to make them
+                                    work together smoothly and streamline your
+                                    job.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main-more__item">
+                            <div class="main-more__item-side">
+                                <h3>Related Services</h3>
+                                <a href="#">Back End Development</a>
+                                <a href="#">Front End Development</a>
+                                <a href="#">DevOps Services</a>
+                                <a href="#">Headless CMS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-more__images">
+                        <div class="main-more__image">
+                            <img
+                                src="assets/img/main-more-1.webp"
+                                width="250"
+                                height="420"
+                                alt="Virtuance"
+                            />
+                            <p>Virtuance</p>
+                        </div>
+                        <div class="main-more__image">
+                            <img
+                                src="assets/img/main-more-2.webp"
+                                width="250"
+                                height="420"
+                                alt="Aparici"
+                            />
+                            <p>Aparici</p>
+                        </div>
+                        <div class="main-more__image">
+                            <img
+                                src="assets/img/main-more-3.webp"
+                                width="250"
+                                height="420"
+                                alt="Evryman"
+                            />
+                            <p>Evryman</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="footer">
-        <div class="container">
+        <section class="well section">
+            <div class="container">
+                <div class="well__content">
+                    <div class="well__item">
+                        <h2>
+                            Well sometimes it is quite <br />
+                            complicated to explain simplicity!
+                        </h2>
+                    </div>
+                    <div class="well__item">
+                        <p>We let our work speak for itself.</p>
+                    </div>
+                    <div class="well__item">
+                        <a href="#">
+                            EXPLORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </footer>
+        <section class="crm section">
+            <div class="container">
+                <div class="crm__content">
+                    <div class="crm__item">
+                        <div class="crm__item-title">
+                            <h2>
+                                CRM Integration
+                            </h2>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                When thinking about a brand-new marketing
+                                campaign to beat your competitors or working on
+                                improving your clients’ referral program, how do
+                                you implement the data you have? What role does
+                                customer relationship management software play
+                                in your work? As a business owner, you may not
+                                only need a powerful CRM but also look for a
+                                reliable way to marry it with your website in
+                                the most effective way.
+                            </p>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                With clients in the heart of all our processes,
+                                we at Ester Digital know how important it is to
+                                keep and manage the clients’ data. Whether you
+                                work with one of the multiple CRM tools
+                                available on the market or have your own custom
+                                CRM software, we know how to integrate it into
+                                your business website and ensure its efficient
+                                operation. No more technical problems, security
+                                issues, or data loss. With Ester Digital as your
+                                development partner, you get nothing to worry
+                                about.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="crm__item">
+                        <div class="crm__item-title">
+                            <h2>
+                                CRM Integration
+                            </h2>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                When thinking about a brand-new marketing
+                                campaign to beat your competitors or working on
+                                improving your clients’ referral program, how do
+                                you implement the data you have? What role does
+                                customer relationship management software play
+                                in your work? As a business owner, you may not
+                                only need a powerful CRM but also look for a
+                                reliable way to marry it with your website in
+                                the most effective way.
+                            </p>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                With clients in the heart of all our processes,
+                                we at Ester Digital know how important it is to
+                                keep and manage the clients’ data. Whether you
+                                work with one of the multiple CRM tools
+                                available on the market or have your own custom
+                                CRM software, we know how to integrate it into
+                                your business website and ensure its efficient
+                                operation. No more technical problems, security
+                                issues, or data loss. With Ester Digital as your
+                                development partner, you get nothing to worry
+                                about.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="crm__item">
+                        <div class="crm__item-title">
+                            <h2>
+                                CRM Integration
+                            </h2>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                When thinking about a brand-new marketing
+                                campaign to beat your competitors or working on
+                                improving your clients’ referral program, how do
+                                you implement the data you have? What role does
+                                customer relationship management software play
+                                in your work? As a business owner, you may not
+                                only need a powerful CRM but also look for a
+                                reliable way to marry it with your website in
+                                the most effective way.
+                            </p>
+                        </div>
+                        <div class="crm__item-desc">
+                            <p>
+                                With clients in the heart of all our processes,
+                                we at Ester Digital know how important it is to
+                                keep and manage the clients’ data. Whether you
+                                work with one of the multiple CRM tools
+                                available on the market or have your own custom
+                                CRM software, we know how to integrate it into
+                                your business website and ensure its efficient
+                                operation. No more technical problems, security
+                                issues, or data loss. With Ester Digital as your
+                                development partner, you get nothing to worry
+                                about.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</body>
+        <section class="well section">
+            <div class="container">
+                <div class="well__content">
+                    <div class="well__item">
+                        <h2>
+                            Well sometimes it is quite <br />
+                            complicated to explain simplicity!
+                        </h2>
+                    </div>
+                    <div class="well__item">
+                        <p>We let our work speak for itself.</p>
+                    </div>
+                    <div class="well__item">
+                        <a href="#">
+                            EXPLORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work section">
+            <div class="container">
+                <div class="work__desc">
+                    <h2>How we work:</h2>
+                    <p>
+                        You know how to work with your customers — we know how
+                        to tame technologies. With such a combination we believe
+                        that our collaboration will be effective and beneficial
+                        for both sides. Ester Digital has a wide experience in
+                        backend development, and we are ready to implement all
+                        we know to improve your customer relationship.
+                    </p>
+                </div>
+                <div class="work__content">
+                    <div class="work__item">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-desc">
+                            <h3>Consulting</h3>
+                            <p>
+                                We support our clients at every stage of their
+                                business development. Whether you do not know
+                                what CRM to choose or how to implement a feature
+                                you need, we are always here to help and suggest
+                                the most effective solution to enhance your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-desc">
+                            <h3>Consulting</h3>
+                            <p>
+                                We support our clients at every stage of their
+                                business development. Whether you do not know
+                                what CRM to choose or how to implement a feature
+                                you need, we are always here to help and suggest
+                                the most effective solution to enhance your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-desc">
+                            <h3>Consulting</h3>
+                            <p>
+                                We support our clients at every stage of their
+                                business development. Whether you do not know
+                                what CRM to choose or how to implement a feature
+                                you need, we are always here to help and suggest
+                                the most effective solution to enhance your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-desc">
+                            <h3>Consulting</h3>
+                            <p>
+                                We support our clients at every stage of their
+                                business development. Whether you do not know
+                                what CRM to choose or how to implement a feature
+                                you need, we are always here to help and suggest
+                                the most effective solution to enhance your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work-nothing"></div>
+                        <div class="work__item-desc">
+                            <h3>Consulting</h3>
+                            <p>
+                                We support our clients at every stage of their
+                                business development. Whether you do not know
+                                what CRM to choose or how to implement a feature
+                                you need, we are always here to help and suggest
+                                the most effective solution to enhance your
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section">
+            <div class="container">
+                <div class="swiper testimonials-swiper testimonials__content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials__item">
+                            <div class="testimonials__item-img">
+                                <img src="assets/img/tpg-1.webp" alt="tpg" />
+                            </div>
+                            <div class="testimonials__item-text">
+                                <p>
+                                    Communicating clearly from the start, Ester
+                                    Digital’s expert team inspired confidence
+                                    throughout the project. Their can-do
+                                    attitude made them a valuable partner.
+                                    Responsiveness and the ability to turn
+                                    constructive feedback into high-quality,
+                                    on-time deliverables were hallmarks of their
+                                    work.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials__item">
+                            <div class="testimonials__item-img">
+                                <img src="assets/img/tpg-1.webp" alt="tpg" />
+                            </div>
+                            <div class="testimonials__item-text">
+                                <p>
+                                    Communicating clearly from the start, Ester
+                                    Digital’s expert team inspired confidence
+                                    throughout the project. Their can-do
+                                    attitude made them a valuable partner.
+                                    Responsiveness and the ability to turn
+                                    constructive feedback into high-quality,
+                                    on-time deliverables were hallmarks of their
+                                    work.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials__item">
+                            <div class="testimonials__item-img">
+                                <img src="assets/img/tpg-1.webp" alt="tpg" />
+                            </div>
+                            <div class="testimonials__item-text">
+                                <p>
+                                    Communicating clearly from the start, Ester
+                                    Digital’s expert team inspired confidence
+                                    throughout the project. Their can-do
+                                    attitude made them a valuable partner.
+                                    Responsiveness and the ability to turn
+                                    constructive feedback into high-quality,
+                                    on-time deliverables were hallmarks of their
+                                    work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="testimonials-arrows">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="team section">
+            <div class="container">
+                <div class="team__desc">
+                    <h2>You are in good company</h2>
+                    <p>
+                        We want to shine brighter than all the others hence our
+                        team of twenty-six people are led by industry top
+                        talents as noted by TopTal and Awwwards
+                    </p>
+                </div>
+                <div class="team__content">
+                    <div class="team__item">
+                        <div class="team__item-img">
+                            <img
+                                src="assets/img/Arthyr_SM-min.webp"
+                                alt="Arthyr_SM-min"
+                            />
+                        </div>
+                        <div class="team__item-desc">
+                            <h3>Ivan Ivanovich</h3>
+                            <p>Front-end developer</p>
+                        </div>
+                    </div>
+                    <div class="team__item">
+                        <div class="team__item-img">
+                            <img
+                                src="assets/img/Arthyr_SM-min.webp"
+                                alt="Arthyr_SM-min"
+                            />
+                        </div>
+                        <div class="team__item-desc">
+                            <h3>Ivan Ivanovich</h3>
+                            <p>Front-end developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__desc">
+                    <h2>
+                        Time is money. We don’t like wasting either. Neither do
+                        you.
+                    </h2>
+                    <p>Contact us today</p>
+                    <a href="#">hello@ester.co</a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__item">
+                        <a href="#">privacy</a>
+                        <a href="#">cookies</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#">behance</a>
+                        <a href="#">dribble</a>
+                        <a href="#">instagram</a>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <p>
+                        Ester Digital OÜ is an independent company. Mentioned
+                        brands and companies are trademarked brands. © 2015–2022
+                        www.ester.co. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+       
+    </body>
 </html>

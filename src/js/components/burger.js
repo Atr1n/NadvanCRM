@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
         let navToggle = document.querySelector('#navToggle')
         let overlay = document.querySelector('.overlay')
         let body = document.querySelector('body')
-        let links = document.querySelectorAll('.header-links')
+        let links = document.querySelectorAll('.header-link')
 
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active')
@@ -19,32 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    const ChangeOffsetHeigth = () => {
-        let main = document.querySelector('main')
-        let arrow = document.querySelector('.arrow')
-        let headerHeight = main.offsetHeight
-
-
-        let addClassBurger = () => navToggle.classList.add('burger-active')
-        let removeClassBurger = () => navToggle.classList.remove('burger-active')
-
-        let addClassArrow = () => arrow.classList.add('arrow-active')
-        let removeClassArrow = () => arrow.classList.remove('arrow-active')
-
-        window.addEventListener('scroll', () => {
-            let scrollpos = window.scrollY
-            scrollpos = window.scrollY
-
-            if (scrollpos >= headerHeight) {
-                addClassBurger()
-                addClassArrow()
-            } else {
-                removeClassBurger()
-                removeClassArrow()
-            }
-        })
-    }
-
     const UrlCleanup = () => {
         window.location.replace('#')
 
@@ -54,6 +28,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     BurgerListeners()
-    ChangeOffsetHeigth()
     UrlCleanup()
 })

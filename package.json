@@ -28,7 +28,7 @@
         "imask": "^6.4.2",
         "jquery": "^3.6.0",
         "sass": "^1.45.2",
-        "swiper": "^6.7.0",
+        "swiper": "^8.1.6",
         "vue": "^2.6.11"
     },
     "devDependencies": {
